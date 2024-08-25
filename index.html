@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
 </head>
 <body>
-    
+    <main>
+        <h1>To-do List</h1>
+        <form id="taskForm">
+            <label for="taskInput">
+                <p class="lead">What do you have to do?</p>
+            </label>
+            <input type="text" id="taskInput" placeholder="Enter a task." name="taskInput">
+        </form>
+        <ul class="tasks" id="tasks">
+            <li class="task">
+                <input type="checkbox">
+                <input type="text" value="something">
+                <button>x</button>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <input type="text" value="something">
+                <button>x</button>
+            </li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
